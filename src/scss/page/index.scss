@@ -1,0 +1,61 @@
+@import '../libs/_minix.scss';
+@import '../libs/common.scss';
+* {
+    font-size: pxTorem(14px);
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+}
+
+.head {
+    width: 100%;
+    height: pxTorem(45px);
+    @include box_flex;
+    @include justify(space-between);
+    @include align;
+    @include sizing;
+    padding: 0 pxTorem(15px);
+    border-bottom: 1px solid #ccc;
+    p {
+        @include box_flex;
+        @include align;
+        padding: pxTorem(2px) pxTorem(6px);
+        border-radius: pxTorem(10px);
+        border: 1px solid #ccc;
+        overflow: hidden;
+        span {
+            font-size: pxTorem(14px);
+        }
+    }
+}
+
+.body {
+    width: 100%;
+    flex: 1;
+    background: blue;
+    @include box_flex;
+    @include direction(column);
+    .btn-ar {
+        width: 100%;
+        height: pxTorem(40px);
+        @include box_flex;
+        @include justify;
+        @include align;
+        p {
+            font-size: pxTorem(12px);
+            @include box_flex;
+            @include direction(column);
+            @include align;
+             :nth-child(2) {
+                padding: 0 pxTorem(60px);
+            }
+            span {
+                display: block;
+            }
+        }
+    }
+}
