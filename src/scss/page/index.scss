@@ -39,23 +39,49 @@
     background: blue;
     @include box_flex;
     @include direction(column);
-    .btn-ar {
+    .wrap-box {
         width: 100%;
-        height: pxTorem(40px);
+        flex: 1;
         @include box_flex;
-        @include justify;
-        @include align;
-        p {
-            font-size: pxTorem(12px);
+        @include direction(column);
+        @include sizing;
+        padding: 0 pxTorem(30px);
+        .btn-ar {
+            width: 100%;
+            height: pxTorem(40px);
             @include box_flex;
-            @include direction(column);
+            @include justify(space-between);
             @include align;
-             :nth-child(2) {
-                padding: 0 pxTorem(60px);
+            @include sizing;
+            p {
+                font-size: pxTorem(12px);
+                @include box_flex;
+                @include direction(column);
+                @include align;
+                 :nth-child(2) {
+                    padding: 0 pxTorem(60px);
+                }
+                span {
+                    display: block;
+                }
             }
-            span {
-                display: block;
+        }
+        .time {
+            width: 100%;
+            height: pxTorem(40px);
+            border-bottom: 1px solid #ccc;
+            @include box_flex;
+            @include align;
+            @include sizing;
+            padding-left: pxTorem(15px);
+            p {
+                font-size: pxTorem(14px);
             }
+        }
+        button {
+            width: 20%;
+            height: pxTorem(30px);
+            margin: pxTorem(20px) auto;
         }
     }
 }

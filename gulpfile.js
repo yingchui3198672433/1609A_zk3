@@ -15,7 +15,10 @@ gulp.task('server', function() {
         .pipe(server({
             port: '8080',
             open: true,
-            livereload: true
+            livereload: true,
+            proxies: [
+                { source: '/api/get/train_tickets', target: 'http://localhost:3000/api/get/train_tickets' }
+            ]
         }))
 });
 

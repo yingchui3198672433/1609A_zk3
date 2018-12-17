@@ -223,28 +223,70 @@ html {
   /* NEW - Chrome */
   -webkit-flex-direction: column;
   flex-direction: column; }
-  .body .btn-ar {
+  .body .wrap-box {
     width: 100%;
-    height: 1.06667rem;
+    flex: 1;
     display: flex;
     /* NEW, Spec - Opera 12.1, Firefox 20+ */
     display: -webkit-flex;
     /* NEW - Chrome */
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center; }
-    .body .btn-ar p {
-      font-size: 0.32rem;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0.8rem; }
+    .body .wrap-box .btn-ar {
+      width: 100%;
+      height: 1.06667rem;
       display: flex;
       /* NEW, Spec - Opera 12.1, Firefox 20+ */
       display: -webkit-flex;
       /* NEW - Chrome */
-      -webkit-flex-direction: column;
-      flex-direction: column;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
       -webkit-align-items: center;
-      align-items: center; }
-      .body .btn-ar p :nth-child(2) {
-        padding: 0 1.6rem; }
-      .body .btn-ar p span {
-        display: block; }
+      align-items: center;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+      .body .wrap-box .btn-ar p {
+        font-size: 0.32rem;
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: center;
+        align-items: center; }
+        .body .wrap-box .btn-ar p :nth-child(2) {
+          padding: 0 1.6rem; }
+        .body .wrap-box .btn-ar p span {
+          display: block; }
+    .body .wrap-box .time {
+      width: 100%;
+      height: 1.06667rem;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-left: 0.4rem; }
+      .body .wrap-box .time p {
+        font-size: 0.37333rem; }
+    .body .wrap-box button {
+      width: 20%;
+      height: 0.8rem;
+      margin: 0.53333rem auto; }
